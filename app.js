@@ -27,7 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/api', api);
 
 // handle all request witch can't be found
 app.all('/*', function(req, res) {
